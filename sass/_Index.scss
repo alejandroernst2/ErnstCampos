@@ -1,0 +1,284 @@
+.LogoRepeat{
+    display: flex;
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+
+    
+    animation-name: LOGO-REPEAT;
+    transition-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-duration: 5s;
+
+    .LogoRepeat--Img{
+        max-width: 50vw;
+        max-height: 50vw;
+        margin: auto;
+    }
+}
+.IndexTopSection{
+	max-height: 100vh;
+	overflow: hidden;
+
+    .ImagenTopSection{
+        margin-bottom: -3vh;
+        min-height: 100vh;
+        min-width: 100%;
+        overflow: cover;
+
+    }
+
+    .TextTopSectionIndex{
+        font-family: 'Bodoni Moda', serif;
+        font-family: 'Newsreader', serif;
+        font-size: 7vh;
+        position: absolute;
+        top: 70vh;
+        left: 8vw;
+        color: $Color-DG;
+        background-color: #f6fff6bb;
+        border-radius:20px ;
+        padding: 20px;
+        @media screen and (max-width: 800px){
+            font-size: 50px;
+            height: auto;
+            max-width: 60vw;
+        }
+    
+        @media screen and (max-width: 630px){
+            font-size: 36px;
+            top: 70vh;
+            height: auto;
+            max-width: 60vw;
+        
+        }
+        @media screen and (max-width: 500px){
+            font-size: 22px;
+            top: 70vh;
+            height: auto;
+            max-width: 60vw;
+        
+        }
+        
+    }
+    
+}
+
+.SecondSectionIndex{
+	min-height: 85vh;	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-image: url(../imagenes/FotoGanado.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+    justify-content: space-evenly;
+    .ArticleSecSectInd{
+        /*Esta clase corresponde a ambos articles que se 
+        encuentran dentro de la second section del index*/
+        
+        box-sizing: border-box;
+        color:$Color-DG;
+        background-color: #f6fff6cc;
+        border-radius: 10px;
+        padding: 3vw;
+        width: 28rem;
+        height: 65vh;
+        margin:auto;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: transform .5s;
+        font-size: 13px;
+        &:hover{
+            transform: scale(1.1);
+        }
+        .h2SectionIndex{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align:center;
+            font-size: 2rem;
+        }
+        .PSecSectIndex{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align:justify;
+        }
+        @media screen and (max-width:1200px) {
+            height: 60vh;
+            margin-top: 5vh;
+            
+        }
+        @media  screen and (max-width: 950px) {
+            margin:3vw;
+            height: auto;
+            margin-top: 5vh;
+            
+        }
+        @media screen and (max-width: 600px){	
+            width: 75%;
+            padding: 3vw;              
+            &:hover{
+                transform: scale(1);
+            }
+                 
+            .PSecSectIndex{
+                text-align: center;
+                font-size: 15px;
+            }
+  
+        }
+        @media screen and (max-width: 400px){	
+            
+            max-width: none;
+            width: 80vw;
+            &:hover{
+               transform: scale(1);
+            }            
+            
+            
+        }
+        
+        
+        
+
+    
+    }
+    .ArticleTratectoriaIndex{
+       @media screen and (max-width: 950px) {
+            margin-bottom: 5vh;
+       }
+        
+    }
+    
+    
+    
+}
+
+.Sect3--Index{
+    min-height: 80vh;
+    background-image: url(../imagenes/alambrado.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-top: 5vh;
+
+    .Sect3--Div_Titulo{
+        margin:auto;
+        text-align:center;
+        height: 10vh;
+        margin-bottom: 5vh;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        background-color: #f6fff6cc ;
+        width: 50vw;
+        transition: transform .5s;
+
+        &:hover{
+            transform: scale(1.2);
+            
+        }
+
+        .Sect3--Div_Titulo_h2{
+            color: $Color-DG;
+            width: 40vw;
+            margin: auto;
+            text-align: center;
+            
+        }
+        @media screen and (max-width:770px){
+            width: 30rem;   
+            .Sect3--Div_Titulo_h2{
+                width:25rem;     
+            }
+       }
+        @media screen and (max-width:500px) {
+            width: 90vw;
+
+            &:hover{
+                transform: scale(1.05);
+                
+                
+            }
+            .Sect3--Div_Titulo_h2{
+                width:80vw;
+                
+                
+            }
+        }
+
+            
+    }
+       
+    .Sect3--Div_Map{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        
+        
+
+        .Div_Map--Mapa{  
+            width: 25rem;
+               @media screen and (max-width:935px){
+                    width: 30rem;   
+               }
+               @media screen and (max-width:550px){
+                     
+                width: 90vw; 
+               }
+           .IframeMapa{
+               
+               height: 25rem;
+               overflow: scroll;
+               border-radius: 15px;
+               width: 25rem;
+               @media screen and (max-width:935px){
+                     
+                    width: 30rem;   
+               }
+               @media screen and (max-width:550px){
+                     
+                width: 90vw;   
+               }
+           }
+            
+            
+        }
+        .Div_Map--Parrafo{
+            
+            display: flex;
+            width:25rem;
+            height:25rem;
+            padding: 1rem;
+            
+            background-color: #f6fff6cb;
+            text-align: left;
+            border-radius: 15px;
+            @media screen and (max-width:935px){
+                margin-top:2rem;       
+                width: 30rem;   
+                height: auto;
+            }
+            @media screen and (max-width:550px){
+                height: auto;
+                width: 90vw;  
+            }
+            
+        }
+        
+    }
+    
+
+
+
+}
+
+

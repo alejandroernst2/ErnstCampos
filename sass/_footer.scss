@@ -1,0 +1,131 @@
+
+.Footer{
+    min-height: 25vh;
+    background-color: $Color-DG;
+    color: $Color-LG;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    .Footer--Columnas{
+        margin: auto;
+        display: flex;
+        flex-direction:column;
+        flex-wrap: nowrap;
+        width: 500px;
+        padding: 5vw;
+        text-align: center;
+        background-color: #2a602a;
+        border-radius: 15px;
+        @media screen and(max-width:1100px){
+            width: 300px
+        }
+        @media screen and(max-width:680px){
+            width: 450px;
+            margin-top: 5vh;
+        }
+        @media screen and(max-width:500px){
+            width: 80vw;
+            margin-top: 5vh;
+        }
+        .Footer--Columnas_A{
+            
+            color:#97a897;
+	        text-decoration:none;
+            width: 70%;
+            margin: auto;
+            color: #d4ddd4;
+            border: 1px solid #2a602a;
+            border-radius: 15px;
+            transition: border 1s;
+            @media screen and (min-width:700px) {
+                width: 90%;
+                
+            }
+            &:hover{
+                color: #d4ddd4;
+                border: 1px dotted #f6fff6;
+                border-radius: 15px;
+            }
+        }
+    }
+    .Footer--Last{
+        width:100vw;
+        background-color:$Color-Red;
+        color: white;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        min-height: 7vh;
+        .Footer-Last_Parrafo{
+            margin: auto;
+        }
+
+        @media screen and (min-width:663px) {
+            margin-bottom: 25px;
+        }
+        
+    
+    }
+    
+    .Footer--Last-ConMg{
+    
+        @extend .Footer--Last;
+        margin-top:50px;
+        margin-bottom: 0;
+
+
+
+
+        @keyframes TEXTO_SLIDE_PC{
+            0%{
+                left: 100vw;
+                
+            }
+            
+            100%{
+                left: -100vw;
+            }
+
+            
+        }
+        @keyframes TEXTO_SLIDE_MOVILE{
+            0%{
+                left: 100vw;
+                
+            }
+            
+            100%{
+                left: -200vw;
+            }
+
+            
+        }
+        .Footer-Last_Parrafo{
+            
+            animation-iteration-count: infinite;
+            transition-timing-function: linear;
+                        
+            position: relative;
+
+            @media screen and (min-width:600px) {
+                animation-name: TEXTO_SLIDE_PC;
+                animation-duration: 20s;}
+        }
+        
+        
+        @media screen and (max-width:600px) {
+            width: 200vw;
+            .Footer-Last_Parrafo{
+                width: 100%;
+                width: inherit;
+                animation-name: TEXTO_SLIDE_MOVILE;
+                animation-duration: 20s;
+            }
+
+        }
+
+
+    }
+        
+}

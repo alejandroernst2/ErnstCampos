@@ -1,0 +1,16 @@
+/*Esto importa todas las secciones del css, dividio en un scss para cada html, y asi obtener un codigo más facil de encontrar!!*/
+
+
+@import "varios";
+
+@import "header";
+
+@import "Index";
+
+@import "campos";
+
+@import "proximamente";
+
+@import "formulario";
+
+@import "footer";

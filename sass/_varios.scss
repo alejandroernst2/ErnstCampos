@@ -1,0 +1,54 @@
+/*Este archivo contiene variables, normalize keyframe, entre otros*/
+
+
+/*COLOR LIGHT GREEN (CASI BLANCO)*/
+$Color-LG: #f6fff6;
+/*COLOR LIGHT GREEN (NIVEL 2)*/
+$Color-LG2: #cff2cf;
+/*COLOR DARK GREEN (NIVEL 1)*/
+$Color-DG:#2D882D;
+/*COLOR DARK GREEN (NIVEL 2)*/
+$Color-DG2:#053505;
+/*COLOR ROJO INTENSO (Hover del Nav+Footer)*/
+$Color-Red:#C13038;
+
+html {
+    scroll-behavior: smooth;
+    body{
+        background-color: $Color-LG;
+        font-family: 'Lato', sans-serif;
+            color: $Color-DG;
+    }
+  }
+
+
+*{
+/* Esto sería el normalize de los navegadores*/
+
+margin: 0;
+padding: 0;
+font-weight:normal;
+line-height: 1.5;
+letter-spacing: 2px;
+
+}
+
+@keyframes LOGO-REPEAT{
+    0%{
+        opacity: 1;
+    }
+    
+    
+    45%{
+        opacity: 0;
+    }
+    55%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+    
+}

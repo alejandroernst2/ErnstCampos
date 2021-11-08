@@ -1,0 +1,57 @@
+
+.Main--Proximamente{
+    display: flex;
+    background-color: white;
+    min-height: 60vh;
+
+    .proximamente--Sect{
+        margin:auto;
+        height: auto;
+        width: 70%;
+        margin-top: 50%;
+        margin-bottom: 20%;
+        padding:5%;
+        background-color:$Color-LG2;
+        color: $Color-DG;
+        border-radius: 20px;
+        .prox--Titulo{
+            display: block;
+            text-align: center;
+            font-size:18px;
+            
+        }
+        .prox--Parrafo{
+            display: block;
+            text-align: center;
+            font-size: 14px;
+           
+        }
+        .prox--Parrafo_A{
+
+            text-decoration: none;
+            color: $Color-DG;
+            
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    
+        @media screen  and (min-width:500px){
+            margin-top: 30%;
+            .prox--Titulo{
+                font-size: 26px;
+            }
+            .prox--Parrafo{
+                font-size: 20px;
+            }
+        }
+        @media screen  and (min-width:900px){
+            margin-top: 20%;
+        }
+
+        
+    }
+        
+
+
+}

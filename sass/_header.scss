@@ -1,0 +1,109 @@
+
+header{
+	z-index: 2;
+}
+
+.PosicionHeader{
+	position: fixed;
+	background-color: $Color-LG;
+	text-align: center;
+
+    .h1LogoImg{
+        max-width: 200px;
+        background-color: $Color-LG;
+        transition: transform 3s;
+        &:hover{
+            transform:scale(1.1);
+        }
+        
+    }
+    @media screen and (max-width: 900px){
+        .nav{
+            display: none;
+            width: 100vw;
+            background-color:$Color-DG;
+        }
+
+        .navbar-light{
+            background-color: $Color-DG;
+            width: 100vw;
+            .navbar-nav{
+                .nav-link{
+                    color: $Color-LG;
+                    &:hover{
+                        color: #bbbbbb;
+                    }
+                    .active{
+                        color: #bbbbbb;
+                    }
+
+                }
+                
+
+            }
+            .navbar-brand {
+                color: $Color-LG;
+                &:hover {
+                    color: #cccccc;
+                }
+            }
+           
+
+        }
+        
+    
+    }
+
+    @media screen and (max-width: 400px){
+        .navbar-brand{
+            font-size: 13px;
+        }
+    }
+        
+
+    @media screen and (min-width: 901px){
+        .navbar{
+            display: none;
+            width: 100vw;
+            background-color:#2D882D ;
+        }
+        
+        .UlNav{
+            background-color: #2D882D;
+            width: 100vw;
+            margin: 0;
+            .LiNav{
+                display: inline-block;
+                list-style: none;
+                width: 30vw;
+                
+                
+                .LiNavA{
+                    display:block;
+                    border: 5px solid #2D882D;
+                    text-decoration: none;
+                    border-radius:2vw;
+                    color: #f6fff6;
+                    transition: color 2s;                    
+                    transition: border 2s;
+                    transition: background-color 2s;
+                    /*este display es para que el <a> ocupe todo el <Li>*/
+                    &:hover{
+                        background-color: #f6fff6;
+                        color: #2D882D;
+                        border: 5px solid  $Color-Red;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+        }
+
+    
+    }
+    
+
+
+
+}
+
