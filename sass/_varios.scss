@@ -39,16 +39,30 @@ letter-spacing: 2px;
     }
     
     
-    45%{
-        opacity: 0;
+    
+
+    49%{
+        opacity: 0.05;
     }
-    55%{
-        opacity: 0;
+    51%{
+        opacity: 0.05;
     }
+    
 
     100%{
         opacity: 1;
     }
 
+    
+}
+
+/*MIXIN*/
+
+@mixin Flex($direc, $wrap, $jus-con:center) {
+    display: flex;
+    flex-direction: $direc;
+    flex-wrap: $wrap;
+    justify-content: $jus-con;
+    
     
 }

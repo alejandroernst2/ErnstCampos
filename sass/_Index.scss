@@ -66,11 +66,8 @@
 }
 
 .SecondSectionIndex{
-	min-height: 85vh;	
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
+    @include Flex(row, wrap, space-around);
+	min-height: 85vh;
 	background-image: url(../imagenes/FotoGanado.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
@@ -97,16 +94,12 @@
             transform: scale(1.1);
         }
         .h2SectionIndex{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            @include Flex(row, wrap, center);
             text-align:center;
             font-size: 2rem;
         }
         .PSecSectIndex{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            @include Flex(row, wrap, center);
             text-align:justify;
         }
         @media screen and (max-width:1200px) {
@@ -168,14 +161,12 @@
     padding-top: 5vh;
 
     .Sect3--Div_Titulo{
+        @include Flex(row, nowrap, center);
+        align-items: center;
         margin:auto;
         text-align:center;
         height: 10vh;
         margin-bottom: 5vh;
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        justify-content: center;
         border-radius: 15px;
         background-color: #f6fff6cc ;
         width: 50vw;
@@ -218,11 +209,8 @@
     }
        
     .Sect3--Div_Map{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content:space-around;
-        
+        @include Flex(row, nowrap, space-around);
+         
         
 
         .Div_Map--Mapa{  

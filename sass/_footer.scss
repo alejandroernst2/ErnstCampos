@@ -1,17 +1,13 @@
 
 .Footer{
+    @include Flex(row, wrap, center);
     min-height: 25vh;
     background-color: $Color-DG;
     color: $Color-LG;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     overflow: hidden;
     .Footer--Columnas{
-        margin: auto;
-        display: flex;
-        flex-direction:column;
-        flex-wrap: nowrap;
+        @include Flex(column, nowrap, center);
+        margin: auto; 
         width: 500px;
         padding: 5vw;
         text-align: center;
@@ -50,12 +46,12 @@
         }
     }
     .Footer--Last{
+        @include Flex(row, nowrap, center);
         width:100vw;
         background-color:$Color-Red;
         color: white;
         text-align: center;
         align-items: center;
-        display: flex;
         min-height: 7vh;
         .Footer-Last_Parrafo{
             margin: auto;

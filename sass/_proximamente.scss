@@ -1,6 +1,7 @@
 
 .Main--Proximamente{
-    display: flex;
+    @include Flex(row, wrap, center);
+    
     background-color: white;
     min-height: 60vh;
 
